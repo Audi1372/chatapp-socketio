@@ -17,7 +17,7 @@ const app = express();
 app.use(express.json());
 
 
-// app.get('/', (req, res) => res.send('API running successfully'))
+
 app.use('/user', userRoutes)
 app.use('/chat', chatRoutes)
 app.use('/message', messageRoutes)
@@ -31,7 +31,6 @@ app.use('/message', messageRoutes)
 
 
 const __dirname1 = path.resolve();
-
 if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname1, "../frontend/build")));
 
