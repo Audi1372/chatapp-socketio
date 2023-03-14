@@ -54,7 +54,7 @@ app.use(errorHandler)
 
 
 const port = process.env.PORT || 5000
-const server = app.listen(port, () => console.log(`server started in port ${port}`))
+const server = app.listen(5000, () => console.log(`server started in port ${port}`))
 
 const io = require("socket.io")(server, {
     pingTimeout: 60000,

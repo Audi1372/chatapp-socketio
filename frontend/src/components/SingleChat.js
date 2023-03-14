@@ -15,7 +15,7 @@ import animationData from "../animations/typing.json";
 import io from "socket.io-client";
 import UpdateGroupChatModel from "./miscellanious/UpdateGroupChatModel";
 import { Chatstate } from "../Context/ChatProvider";
-const ENDPOINT = "https://chatapp-socketio.vercel.app/";
+const ENDPOINT = "https://chat-backend-n46t.onrender.com";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
