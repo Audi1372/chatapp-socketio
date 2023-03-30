@@ -1,0 +1,25 @@
+{
+  "name": "chatboat",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000c\u0000h\u0000a\u0000t\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "npm start --prefix frontend",
+    "backend":"npm run --prefix backend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Audi1372/chatapp-socketio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Audi1372/chatapp-socketio/issues"
+  },
+  "homepage": "https://github.com/Audi1372/chatapp-socketio#readme",
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
+}

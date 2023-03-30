@@ -15,7 +15,7 @@ import animationData from "../animations/typing.json";
 import io from "socket.io-client";
 import UpdateGroupChatModel from "./miscellanious/UpdateGroupChatModel";
 import { Chatstate } from "../Context/ChatProvider";
-const ENDPOINT = "https://chat-api-zzkj.onrender.com";
+const ENDPOINT = "http://localhost:5000/";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {

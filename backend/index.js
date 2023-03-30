@@ -1,7 +1,7 @@
 const express = require('express')
 const connectDB = require('./config/db');
 const dotenv = require("dotenv")
-
+const cors = require("cors")
 const userRoutes = require('./routes/userRoutes')
 const chatRoutes = require('./routes/chatRoutes')
 const messageRoutes = require("./routes/messageRoutes")
@@ -23,7 +23,9 @@ app.use('/chat', chatRoutes)
 app.use('/message', messageRoutes)
 
 
-
+app.use(cors({
+    origin: "*"
+}))
 
 
 //------------------ deployment---------------------------------------------------------------
